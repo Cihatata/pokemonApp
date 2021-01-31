@@ -11,7 +11,7 @@ const Header = () => {
           PokeDex
           {/* <img src="pokeball.gif" alt="pokeball" width="48" /> */}
         </div>
-        <button onClick={() => history.push('/mypokemons')} className="button">My Pokemons</button>
+        <button onClick={() => history.push('/pokemonApp/mypokemons')} className="button">My Pokemons</button>
       </nav>
     </header>
   )

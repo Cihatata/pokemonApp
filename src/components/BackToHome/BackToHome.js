@@ -6,7 +6,7 @@ const BackToHome = () => {
   return (
     <div className="main-top">
       <button
-        onClick={() => history.push('/')}
+        onClick={() => history.push('/pokemonApp')}
         className="button add-btn back"
       >
         Back to Home

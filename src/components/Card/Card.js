@@ -30,7 +30,7 @@ const Card = ({ url }) => {
 
   // Redirect to Pokemon Detail
   const redirect = (e) => {
-    history.push(`/pokemon/${pokemonData.name}`)
+    history.push(`/pokemonApp/pokemon/${pokemonData.name}`)
   }
 
   // Add to My List
