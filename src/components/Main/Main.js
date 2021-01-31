@@ -16,7 +16,6 @@ const Main = () => {
   const handlePageClick = (data) => {
     dispatch({ type: 'SET_PAGE', payload: data.selected + 1 })
   }
-  console.log('render');
   const calculateTotalPage = () => {
     const totalPage = Math.ceil(totalPokemons / PER_PAGE);
     return totalPage;

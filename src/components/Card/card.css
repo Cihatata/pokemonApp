@@ -1,8 +1,7 @@
 .card{
-  width: calc(25% - 12px);
+  width: calc(100% - 12px);
   padding: 18px;
   border-radius: 8px;
-  margin-right: 12px;
   margin-bottom: 10px;
   box-shadow: 0 3px 3px 3px #eee;
   display: flex;
@@ -56,4 +55,44 @@
 .card .rmv-btn{
   background-color: #ff0000;
   color: #fff;
+}
+
+@media (min-width: 576px) {
+  .card:nth-child(2n){
+    margin-right: 0;
+  }
+  .card{
+    width: calc(50% - 12px);
+    padding: 18px;
+    border-radius: 8px;
+    margin-right: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 3px 3px #eee;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .card:nth-child(2n) {
+    margin-right:12px;
+  }
+  .card:nth-child(4n){
+    margin-right: 0;
+  }
+  .card{
+    width: calc(25% - 12px);
+    padding: 18px;
+    border-radius: 8px;
+    margin-right: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 3px 3px #eee;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
 }

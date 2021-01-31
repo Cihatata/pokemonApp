@@ -4,6 +4,7 @@ import { getPokemonData } from '../../service';
 import { Context } from '../../store'
 import Stats from './Stats';
 import './card.css';
+import Loading from '../Loading/Loading';
 
 const Card = ({ url }) => {
   const [state, dispatch] = useContext(Context);
@@ -59,7 +60,7 @@ const Card = ({ url }) => {
         }
       </article>
     ) : (
-      <div>Loading</div>
+      <Loading />
     )
 }
 

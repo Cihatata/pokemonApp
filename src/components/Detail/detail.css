@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
 }
 .article-types h4{
   margin-top: 8px;
@@ -33,4 +34,17 @@
   margin-right: 4px;
   margin-bottom: 4px;
   border-radius: 4px;
+}
+
+.pokemon-header{
+  text-align: center;
+  font-size: 32px;
+  color: #002db3;
+  text-transform: capitalize;
+}
+
+@media (min-width: 576px) {
+  .article-top{
+    flex-direction: row;
+  }
 }

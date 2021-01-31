@@ -6,7 +6,7 @@ const Detail = ({ pokemonData }) => {
 
   return (
     <article>
-      <h2>{pokemonData.name}</h2>
+      <h2 className="pokemon-header">{pokemonData.name}</h2>
       <div className="article-top">
         <div className="article-img-type">
           <img width="180" src={pokemonData.sprites.other.dream_world.front_default} alt="pokemonProfile" />

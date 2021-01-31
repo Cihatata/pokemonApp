@@ -2,6 +2,8 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .cards-wrapper{
   display: flex;
@@ -24,6 +26,7 @@
   padding: 8px;
   border-radius: 4px;
   border: 1px solid #0000ff;
+  width: 180px;
 }
 .input-wrapper .input:focus{
   margin-right: 10px;
@@ -47,4 +50,19 @@
   margin-top: 40px;
   display: flex;
   justify-content: flex-end;
+}
+
+@media (min-width: 576px) {
+  .input-wrapper .input{
+    width: 100%;
+    max-width: 350px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .main{
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

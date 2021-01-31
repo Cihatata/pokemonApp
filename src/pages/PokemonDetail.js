@@ -4,6 +4,7 @@ import BackToHome from '../components/BackToHome/BackToHome';
 import { getPokemonData } from '../service';
 import { API_URL } from '../constant';
 import Detail from '../components/Detail/Detail';
+import Loading from '../components/Loading/Loading';
 
 const PokemonDetail = () => {
   const params = useParams();
@@ -19,7 +20,7 @@ const PokemonDetail = () => {
       <BackToHome />
       {pokemonData 
       ? <Detail pokemonData={pokemonData} />
-      : <div>Loading</div>
+      : <Loading />
     }
     </section>
   );

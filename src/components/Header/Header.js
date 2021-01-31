@@ -4,7 +4,6 @@ import './header.css';
 
 const Header = () => {
   const history = useHistory();
-  console.log(history);
   return (
     <header className="header">
       <nav className="nav-container">
