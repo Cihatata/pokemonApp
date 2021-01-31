@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/pokemonApp/static/css/main.5018344c.chunk.css",
+    "main.js": "/pokemonApp/static/js/main.91964b7c.chunk.js",
+    "main.js.map": "/pokemonApp/static/js/main.91964b7c.chunk.js.map",
+    "runtime-main.js": "/pokemonApp/static/js/runtime-main.b44f5af5.js",
+    "runtime-main.js.map": "/pokemonApp/static/js/runtime-main.b44f5af5.js.map",
+    "static/js/2.3a426e4a.chunk.js": "/pokemonApp/static/js/2.3a426e4a.chunk.js",
+    "static/js/2.3a426e4a.chunk.js.map": "/pokemonApp/static/js/2.3a426e4a.chunk.js.map",
+    "static/js/3.51a30f90.chunk.js": "/pokemonApp/static/js/3.51a30f90.chunk.js",
+    "static/js/3.51a30f90.chunk.js.map": "/pokemonApp/static/js/3.51a30f90.chunk.js.map",
+    "index.html": "/pokemonApp/index.html",
+    "static/css/main.5018344c.chunk.css.map": "/pokemonApp/static/css/main.5018344c.chunk.css.map",
+    "static/js/2.3a426e4a.chunk.js.LICENSE.txt": "/pokemonApp/static/js/2.3a426e4a.chunk.js.LICENSE.txt",
+    "static/media/header.css": "/pokemonApp/static/media/Pocket-Monk.09d09837.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b44f5af5.js",
+    "static/js/2.3a426e4a.chunk.js",
+    "static/css/main.5018344c.chunk.css",
+    "static/js/main.91964b7c.chunk.js"
+  ]
+}
