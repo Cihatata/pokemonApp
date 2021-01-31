@@ -1,0 +1,50 @@
+.main{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.cards-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.input-wrapper{
+  display: flex;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:40px;
+  margin-bottom:40px;
+}
+
+.input-wrapper .input{
+  margin-right: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #0000ff;
+}
+.input-wrapper .input:focus{
+  margin-right: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ff0000;
+}
+
+.input-wrapper .search-btn{
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.input-wrapper .reset-btn{
+  padding: 10px;
+}
+
+.main-top{
+  width: 100%;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+}

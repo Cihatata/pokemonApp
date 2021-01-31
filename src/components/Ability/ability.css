@@ -1,0 +1,11 @@
+.pokemon-ability{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.ability-name{
+  color: #0000ff;
+  margin-bottom: 2px;
+  font-size: 18px;
+}

@@ -1,0 +1,40 @@
+@font-face {
+  font-family: PokeTitle;
+  src: local('PokeTitle'), url('./Pocket-Monk.otf');
+}
+
+.header{
+  background-color: #0040ff;
+  padding: 10px;
+}
+.header .nav-container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .logo{
+  font-family: PokeTitle, sans-serif;
+  color: #ffff00;
+  font-size: 32px;
+  text-shadow: 2px 2px 4px #ff0000; /* horizontal-offset vertical-offset 'blur' colour */
+  display: flex;
+  align-items: center;
+}
+
+.button{
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  background-color: #002db3;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: #4562b8;
+}

@@ -1,0 +1,59 @@
+.card{
+  width: calc(25% - 12px);
+  padding: 18px;
+  border-radius: 8px;
+  margin-right: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 3px 3px #eee;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.card:nth-child(4n){
+  margin-right: 0;
+}
+.card-bottom{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.pokemon-stats{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pokemon-name{
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.pokemon-stat-key{
+  color: #002db3;
+  font-weight: 600;
+  font-size: 12px;
+}
+.pokemon-stat-value{
+  color: #ff0000;
+}
+
+.stat-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 49%;
+}
+
+.card .add-btn{
+  background-color: #00fea4;
+  color: #ffffff;
+}
+
+.card .rmv-btn{
+  background-color: #ff0000;
+  color: #fff;
+}

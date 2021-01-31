@@ -1,0 +1,36 @@
+.article-top{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.article-types h4{
+  margin-top: 8px;
+}
+
+.pokemon-type{
+  background-color: #0000ff;
+  color: #fff;
+  padding: 6px;
+  border-radius: 4px;
+  margin-right: 10px;
+  display: inline;
+}
+
+.article-stats{
+  text-align: center;
+}
+
+.move-container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pokemon-move{
+  background-color: #0000ff;
+  color: #fff;
+  padding: 8px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+}
