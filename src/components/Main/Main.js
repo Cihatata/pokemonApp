@@ -14,23 +14,29 @@ const Main = () => {
   const { pokemons, totalPokemons, page } = state;
 
   const handlePageClick = (data) => {
+    // update selected page in store
     dispatch({ type: 'SET_PAGE', payload: data.selected + 1 })
   }
+
+  // Calculate Total Page
   const calculateTotalPage = () => {
     const totalPage = Math.ceil(totalPokemons / PER_PAGE);
     return totalPage;
   }
 
+  // Search pokemon
   const handleSearch = () => {
     getPokemonsList(dispatch, page, searchValue);
   }
 
+  // back to the first data 
   const handleReset = () => {
     setSearchValue('');
     dispatch({ type: 'SET_PAGE', payload:1})
     getPokemonsList(dispatch, page);
   }
 
+  // Get Initial Data and When page changed, fetch new data
   useEffect(() => {
     getPokemonsList(dispatch, page);
   }, [page])

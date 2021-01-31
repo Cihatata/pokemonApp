@@ -10,10 +10,12 @@ const App = () => {
 
   return (
     <Router>
+      {/* Connect Store with useContext */}
       <Store>
         <Header />
         <div className="main">
           <Switch>
+            {/* Page Routing */}
             <Route path="/mypokemons" component={MyPokemons} />
             <Route exact path="/pokemon/:name" component={PokemonDetail} />
             <Route exact path="/" component={Home} />

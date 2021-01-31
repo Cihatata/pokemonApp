@@ -12,11 +12,13 @@ const Card = ({ url }) => {
   const { myPokemons } = state;
   const history = useHistory();
 
+  // is pokemon on the list
   const isThereMyPokemons = () => {
     const bool = myPokemons.some((item) => item.id === pokemonData.id);
     return bool;
   }
 
+  //remove from My List
   const removeMyPokemons = (e) => {
     e.stopPropagation();
     e.nativeEvent.stopImmediatePropagation();
@@ -26,10 +28,12 @@ const Card = ({ url }) => {
     dispatch({type: 'REMOVE_MY_POKEMONS', payload: prevMyPokemons});
   }
 
+  // Redirect to Pokemon Detail
   const redirect = (e) => {
     history.push(`/pokemon/${pokemonData.name}`)
   }
 
+  // Add to My List
   const addMyPokemons = (e) => {
     e.stopPropagation();
     e.nativeEvent.stopImmediatePropagation();
@@ -38,6 +42,7 @@ const Card = ({ url }) => {
     dispatch({ type: 'ADD_MY_POKEMONS', payload: prevMyPokemons });
   }
   useEffect(() => {
+    // Fetch
     getPokemonData(url)
       .then((res) => setPokemonData(res));
   }, [url])

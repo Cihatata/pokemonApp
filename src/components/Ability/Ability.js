@@ -4,7 +4,8 @@ import './ability.css';
 const Ability = ({ ability }) => {
   const [abilityFeature, setAbilityFeature] = useState();
 
-  const detechLanguage = () => {
+  // Get english data
+  const detectLanguage = () => {
     let obj = abilityFeature.effect_entries.find((item) => {
         return item.language.name === 'en'
       })
@@ -24,7 +25,7 @@ const Ability = ({ ability }) => {
             {ability.name}
           </span>
           <div className="ability-explain">
-            {abilityFeature && detechLanguage().short_effect}
+            {abilityFeature && detectLanguage().short_effect}
           </div>
         </div>
       )}
